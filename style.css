@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.header-container> .logo{
+    color: #818cf8;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.header-container> .logo>img{
+    width: 70px;
+    height: 70px;
+}
+.header-container i{
+    border: 5px solid #818cf8;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 2em;
+    color:#818cf8;
+}
+.toggle{
+    background-color:#1c1c29;
+    color: white;
+}
+
+.contaier{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contaier>.input-box{
+    display: flex;
+    justify-content: center;
+    /* border: 4px solid #5459AC; */
+}
+.head{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 800px;
+}
+#headings{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #818cf8;
+    text-align: justify;
+}
+.contaier>.input-box>textarea{
+    border: 4px solid #818cf8;
+    border-radius: 20px;
+    font-size: 1.4em;
+    color: gray;
+    margin: 20px;
+    padding: 20px;
+    padding-top: 4px;
+    scrollbar-width: none;
+    font-weight: 500;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+.contaier>.input-box>textarea::placeholder{
+    color:gray;
+    font-size: 1.1em;
+    margin-top: 0;
+    font-weight: 500;
+}
+.question-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(29, 27, 27);
+    word-wrap: wrap;
+    padding: 20px;
+}
+.question-type-label{
+    padding: 10px;
+    color: gray;
+}
+.question-type select{
+    border: 3px solid gray;
+    color: gray;
+    font-size: 1.3em;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 4px;
+    outline: none;
+}
+.btn{
+    
+}
+.btn>div{
+    background-color: #818cf8;
+    display: flex;
+    margin-bottom: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.btn>div:hover{
+    background-color: #6c79f3;
+}
+.btn>div:active{
+    border: 1px solid #5564eb;
+}
+.paragraphs{
+    
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #818cf8;
+    padding: 20px;
+    
+}
+.paragraphs h3{
+    font-size: 2.5em;
+}
+.paragraphs p{
+    width: 650px;
+    color: gray;
+    font-size: 1.3em;
+    text-align: justify;
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    border: 4px solid #818cf8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top:30px ;
+    display:none;
+    box-sizing: border-box;
+}
+.quiz> div{
+    width: 800px;
+    text-align: justify;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    border: 4px solid #818cf8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin-top:30px ;
+    display:none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.summary>h3{
+    width: 100%;
+}
+.summary>p{
+    
+    width: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    gap: 10px;
+
+}
+.box>div{
+    width: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer{
+    color: #818cf8;
+    font-size: 1.5em;
+    padding: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width:600px){
+    .paragraphs{
+        width: 400px;
+    }
+    .paragraphs p{
+        width: 350px;
+    }
+    #headings{
+        font-size: 2em;
+        
+    }
+    .head{
+        width: 400px;
+    }
+    .quiz{
+        width: 500px;
+        box-sizing: border-box;
+    }
+    .summary{
+        width: 500px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 900px){
+    #headings{
+        width: 600px;
+        
+    }
+}

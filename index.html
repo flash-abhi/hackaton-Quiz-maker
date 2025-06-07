@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Quizpee</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="logo"><img src="repixify-logo.webp" alt="logo">Quizpee</span>
+            <span id="toggle"><i class="toggle-moon fa-regular fa-moon"></i></span>
+        </div>
+    </header>
+    <main>
+        <div class="contaier">
+            <div class="head">
+                <span id="headings">Paste your paragraph here and generate all possible MCQs with our question generator tool.📝</span>
+            </div>
+            <div class="input-box">
+                <textarea name="paragraph" id="paragraph"rows="5" maxlength="1000"
+                cols="30" placeholder="Enter the paragraph for generating the quiz ...."></textarea>
+            </div>
+            <!-- <div class="question-type">
+                <h3 class="question-type-label">Question Type ❓:</h3>
+                <select name="questions-type" id="questions-type">
+                    <option value="multiple-choice">---Select the Questions type----</option>
+                    <option value="multiple-choice">Multiple-Choice</option>
+                    <option value="True-false">True/False</option>
+                </select>
+            </div> -->
+            <div class="question-type">
+                <h3 class="question-type-label">Number of questions  ❓:</h3>
+                <select name="question-numbers" id="questions-numbers">
+                    <option value="5">---Select the Number of Questions----</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <div class="btn">
+                <div id="generate-btn">Generate Questions</div>
+                <div id="generate-summary">Generate Summay</div>
+            </div>
+            <div class="quiz">
+                <!-- <div class="box">
+                    <h3 class="quest"></h3>
+                    <div class="option1"></div>
+                    <div class="option2"></div>
+                    <div class="option3"></div>
+                    <div class="option4"></div>
+                </div> -->
+            </div>
+            <div class="summary">
+                
+            </div>
+            <div class="paragraphs">
+                <h3>Free AI Question Generator tool 🤔</h3>
+                <p>In this digital era, everything is shifting its base to the online platform. Whether it's a business or education, you can find everything online. Because of such transformation, there has been an increase in demand for various online tools that help in the growth of learning faster and saving time. A Student, a teacher or any Hiring manager, look for a tool that can generate quizzes based on the paragraph automatically, avoiding the manual interaction that costs their time. This is where an Quiz Generator tool comes in handy. Quiz Generator is a tool that analyzes the paragraph and based on it, generates relevant MCQs or True/False questions faster, saving you time and effort.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="footer">© 2025 Quizpee. All rights reserved.</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
